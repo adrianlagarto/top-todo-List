@@ -7,4 +7,4 @@ function task (title, details, priority, date) {
   this.date = date;
 }
 
-
+export default task;
