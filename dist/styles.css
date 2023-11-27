@@ -50,7 +50,7 @@ body{
 #sidebar button{
   width:50%;
   background-color: blue;
-  border:none;
+  border:1px solid red;
   color:#fff;
   cursor: pointer;
 }

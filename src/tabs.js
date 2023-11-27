@@ -1,3 +1,5 @@
+import tabAll from "./tabAll";
+import tabToday from "./tabToday";
 
 
 const tabs = () => {
@@ -15,10 +17,11 @@ const tabs = () => {
   projectBtn.setAttribute('id', 'project-btn');
   allBtn.setAttribute('id', 'all-btn');
 
-  allBtn.innerText = 'All';
-  todayBtn.innerText = 'Today';
-  projectBtn.innerText = 'Project';
-  notesBtn.innerText = 'Notes';
+
+  allBtn.textContent = 'All';
+  todayBtn.textContent = 'Today';
+  projectBtn.textContent = 'Project';
+  notesBtn.textContent = 'Notes';
 
   sidebar.appendChild(allBtn);
   sidebar.appendChild(todayBtn);
@@ -27,7 +30,35 @@ const tabs = () => {
 
   container.appendChild(sidebar);
 
+  allBtn.addEventListener('click', () => {
+    clearContent();
+    tabAll();//render the page
+  })
+
+  todayBtn.addEventListener('click', () => {
+    clearContent();
+    tabToday();//render the page
+  })
+
+  projectBtn.addEventListener('click', () => {
+    clearContent();
+    createProject();//render the page
+  })
+
+  notesBtn.addEventListener('click', () => {
+    clearContent();
+    createNotes();//render the page
+  })
+
   console.log('tabs')
+}
+
+function clearContent() {
+  const main = document.querySelector('#main');
+  const pageContent = document.querySelector('.page-content')
+  if(pageContent){
+  main.removeChild(pageContent)
+  }
 }
 
 export default tabs;

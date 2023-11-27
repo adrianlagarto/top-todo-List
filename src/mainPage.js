@@ -10,7 +10,7 @@ const mainPage = () => {
   //Header div
   header.setAttribute('id', 'header');
   const headerTitle = document.createElement('h1');
-  headerTitle.innerText = 'TO-DO';
+  headerTitle.textContent = 'TO-DO';
   headerTitle.setAttribute('id','header-title');
   header.appendChild(headerTitle);
 
@@ -19,10 +19,7 @@ const mainPage = () => {
   /*Main*/
 
   main.setAttribute('id', 'main')
-  const exp = document.createElement('div');
-  exp.innerText = 'Main'
 
-  main.appendChild(exp)
 
   /* 
     side bar divs

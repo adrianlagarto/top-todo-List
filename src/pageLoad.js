@@ -1,7 +1,7 @@
 import mainPage from "./mainPage.js";
 import tabs from "./tabs";
 
-function initialLoad (){
+function pageLoad (){
   tabs();//generates new tabs on page
   mainPage();//creates main page dynamically
 }
@@ -17,4 +17,4 @@ function initialLoad (){
 //render the new tab
 
 
-export default initialLoad;
+export default pageLoad;

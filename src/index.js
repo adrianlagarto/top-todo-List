@@ -1,6 +1,5 @@
 import pageLoad from "./pageLoad";
 
-console.log('pageLoading')
 pageLoad();
 
 
