@@ -2,15 +2,18 @@ import task from "./Task";
 
 function noteConfirm () {
   //query the input.value
-  let popUpBox = document.querySelector('div').value;
-  let title = document.querySelector('input').value;
-  let details = document.querySelector('textarea').value;
-  let priority = document.querySelector('div').value;
-  let date = document.querySelector('input').value;
-  let confirm = document.querySelector('button').value;
-  let exit = document.querySelector('button').value;
+  let popUpBox = document.querySelector('#pop-up-box-1').value;
+  let title = document.querySelector('#title').value;
+  let details = document.querySelector('#details').value;
+  let priority = document.querySelector('#priority').value;
+  let date = document.querySelector('#date').value;
+  let confirm = document.querySelector('#confirm').value;
 
   let newTask = new task(title, details, priority, date)
 
+  console.log('qwerty');
+
+
 }
 
+export default noteConfirm;

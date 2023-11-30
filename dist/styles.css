@@ -78,7 +78,6 @@ body{
   padding: 20px;
   box-sizing: border-box;
   display: grid;
-
 }
 
 #details{
@@ -119,4 +118,14 @@ body{
 #high-input{
   grid-row: 2/3;
   grid-column: 3/4;
+}
+
+#confirm{
+  background-color: lightgreen;
+}
+
+/*Task list*/
+
+#card-container{
+  background-color: pink;
 }

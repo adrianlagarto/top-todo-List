@@ -3,7 +3,6 @@
 function addButton (menu) {
   //task name, details, date, priority
     
-
   const container = document.querySelector('#container');
 
   const popUpBox = document.createElement('div');
@@ -14,7 +13,7 @@ function addButton (menu) {
   const confirm = document.createElement('button');
   const exit = document.createElement('button');
 
-  popUpBox.setAttribute('class', 'pop-up-box')
+  popUpBox.setAttribute('class', 'pop-up-box');
   popUpBox.setAttribute('id', 'pop-up-box-1');
   title.setAttribute('id', 'title');
   details.setAttribute('id', 'details');
@@ -31,7 +30,10 @@ function addButton (menu) {
 
   date.type = 'date';
   confirm.textContent = 'Confirm';
+  confirm.type = 'submit';
+  confirm.value = 'Add Book';
   exit.textContent = 'Exit';
+
 
     if(menu === 'all'){
       console.log('all');
@@ -54,9 +56,19 @@ function addButton (menu) {
       medium.textContent = 'medium';
       high.textContent = 'high';
 
+      
+
       priorityLow.setAttribute('id', 'low-input');
       priorityMedium.setAttribute('id', 'medium-input');
       priorityHigh.setAttribute('id', 'high-input');
+
+      title.setAttribute('class', 'info-input');
+      details.setAttribute('class', 'info-input');
+      priority.setAttribute('class', 'info-input');
+      date.setAttribute('class', 'info-input');
+      priorityLow.setAttribute('class', 'info-input');
+      priorityMedium.setAttribute('class', 'info-input');
+      priorityHigh.setAttribute('class', 'info-input');
 
       priorityLow.value = 'low';
       priorityMedium.value = 'medium';
@@ -74,12 +86,11 @@ function addButton (menu) {
       form.appendChild(high);
       form.appendChild(priorityHigh);
 
-      
       form.appendChild(title);
       form.appendChild(details);
       form.appendChild(date);
-      form.appendChild(confirm);
-      form.appendChild(exit);
+      popUpBox.appendChild(confirm);
+      popUpBox.appendChild(exit);
 
       popUpBox.appendChild(form)
       container.appendChild(popUpBox)
@@ -87,11 +98,11 @@ function addButton (menu) {
     }
 }
 
-function allTask (){
+//function allTask (){
   //makes the pop up for the task
 
 
-}
+//}
 
 /*menu = task for All/today, project, notes */
 

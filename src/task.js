@@ -1,10 +1,10 @@
 
 
-function task (title, details, priority, date) {
+function task (title, details, date, priority) {
   this.title = title;
   this.details = details;
-  this.priority = priority;
   this.date = date;
+  this.priority = priority;
 }
 
 export default task;
