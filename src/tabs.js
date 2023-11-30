@@ -1,5 +1,6 @@
 import tabAll from "./tabAll";
 import tabToday from "./tabToday";
+import tabNotes from "./tabNotes";
 
 
 const tabs = () => {
