@@ -47,7 +47,7 @@ const tabs = () => {
 
   notesBtn.addEventListener('click', () => {
     clearContent();
-    createNotes();//render the page
+    tabNotes();//render the page
   })
 
   console.log('tabs')
